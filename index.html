@@ -6,6 +6,7 @@
     <title>Portfolio | Sapnendra Jaiswal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -15,6 +16,7 @@
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -22,11 +24,10 @@
     </header>
 
     <!-- Hero Sectiion starts -->
-
     <section class="hero-section" id="home">
         <div class="text-content">
           <h2>Hi There,<br /> I'm <span>Sapnendra </span>Jaiswal</h2>
-          <p>I am into <span class="typing-text"></span></p>
+          <p>I am a <span class="typing-text"></span></p>
           <a id="about-btn" href="#about"><span>About Me</span>
             <i class="fas fa-arrow-circle-down"></i>
           </a>
@@ -37,20 +38,17 @@
               <li><a class="twitter" aria-label="Twitter" href="https://x.com/Xsapnendra" target="_blank"><i class="fab fa-twitter"></i></a></li>
             </ul>
           </div>
-          <div id="about"></div>
         </div>
         <div class="image">
           <img draggable="false" class="tilt" src="./assets/img/hero1.png" alt="" height="500">
         </div>
-    </section>
-
+      </section>
     <!--  Hero Section ends -->
 
 
 
     <!-- About me section starts -->
-
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="center-item">
             <h1>About <span>Me</span></h1>
             <div class="container">
@@ -58,18 +56,91 @@
                     <img src="./assets/img/hero.png" class="tilt" alt="profile picture" height="400">
                 </div>
                 <div class="text-content">
-                    <h2>I'm Sapnendra</h2>
-                    <h3>Web Developer</h3>
-                    <p>"Fresher MERN developer passionate about crafting robust and scalable web applications. Proficient in MongoDB, Express.js, React.js, and Node.js to deliver seamless user experiences. Dedicated to staying updated with the latest technologies and best practices in the field."</p>
+                    <h2>Web <span>Developer</span></h2>
+                    <p>"Fresher MERN developer passionate about crafting robust and scalable web applications. Proficient in MongoDB, Express.js, React.js, and Node.js to deliver seamless user experiences. Dedicated to staying updated with the latest technologies and best practices in the field. I am also excel in solving medium-level Data Structures and Algorithms problems, leveraging my analytical skills and expertise. With a solid understanding of key concepts, I confidently navigate through challenges to find effective solutions. My approach combines efficiency and creativity to tackle diverse problem sets within this domain."</p>
                 </div>
             </div>
         </div>
     </section>
-    
     <!-- About me section ends -->
 
 
+    <!-- Skills section starts -->
+    <section class="skills" id="skills">
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+  
+      <div class="container">
+        <div class="row" id="skillsContainer">
 
+        </div>
+      </div>
+
+    </section>
+    <!-- Skills section ends -->
+
+
+    <!-- Projects section starts -->
+    <section class="work" id="work">
+
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects</h2>
+
+      <div class="box-container">
+
+      </div>
+
+      <div class="viewall">
+        <a href="./projects/index.html" class="btn">View All
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </section>
+    <!-- Projects section ends -->
+
+    
+    <!-- contact section starts -->
+  <section class="contact" id="contact">
+
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/img/contact1.png" alt="">
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit">
+              Submit <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->    
     <!-- Auto typing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
     integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
@@ -79,6 +150,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
     integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="app.js"></script>
 </body>
