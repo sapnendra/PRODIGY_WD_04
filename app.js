@@ -92,28 +92,59 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
 
+// disable developer mode
+document.onkeydown = function (e) {
+  if (e.keyCode == 123) {
+      return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+      return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+      return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+      return false;
+  }
+  if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+      return false;
+  }
+}
+
+// Start of Tawk.to Live Chat
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+(function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+})();
+// End of Tawk.to Live Chat
+
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
-/* SCROLL HOME */
-srtop.reveal('.home .content h3', { delay: 200 });
-srtop.reveal('.home .content p', { delay: 200 });
-srtop.reveal('.home .content .btn', { delay: 200 });
+const srtop = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 1000,
+    reset: true
+});
 
-srtop.reveal('.home .image', { delay: 400 });
-srtop.reveal('.home .linkedin', { interval: 600 });
-srtop.reveal('.home .github', { interval: 800 });
-srtop.reveal('.home .twitter', { interval: 1000 });
-srtop.reveal('.home .telegram', { interval: 600 });
-srtop.reveal('.home .instagram', { interval: 600 });
-srtop.reveal('.home .dev', { interval: 600 });
+/* SCROLL HOME */
+srtop.reveal('.hero-section .text-content h2', { delay: 200 });
+srtop.reveal('.hero-section .text-content p', { delay: 200 });
+srtop.reveal('.hero-section .text-content #about-btn', { delay: 300 });
+srtop.reveal('.hero-section .image', { delay: 400 });
+srtop.reveal('.hero-section .linkedin', { interval: 600 });
+srtop.reveal('.hero-section .github', { interval: 800 });
+srtop.reveal('.hero-section .twitter', { interval: 1000 });
 
 /* SCROLL ABOUT */
-srtop.reveal('.about .content h3', { delay: 200 });
-srtop.reveal('.about .content .tag', { delay: 200 });
-srtop.reveal('.about .content p', { delay: 200 });
-srtop.reveal('.about .content .box-container', { delay: 200 });
-srtop.reveal('.about .content .resumebtn', { delay: 200 });
-
+srtop.reveal('.about-section .container .image', { delay: 200 });
+srtop.reveal('.about-section .container .text-content h2', { delay: 300 });
+srtop.reveal('.about-section .container .text-content p', { delay: 200 });
 
 /* SCROLL SKILLS */
 srtop.reveal('.skills .container', { interval: 200 });
