@@ -1,0 +1,96 @@
+@media only screen and (max-width: 380px) {
+  header {
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .hero-section {
+    margin: 0;
+    min-height: 100vh;
+  }
+  .hero-section .image {
+    display: none;
+  }
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-content h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .text-content p {
+    color: #ffffff;
+  }
+  .social-icons li i {
+    background-color: #fc8d05;
+  }
+  .about-section .container {
+    padding: 0;
+  }
+  .about-section .container .image {
+    display: none;
+  }
+
+
+
+  /*  skill section */
+  .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+
+
+  /* Education */
+  .education .box-container .box {
+    width: 90%;
+  }
+  .education .box-container .box .image {
+    display: none;
+  }
+
+  /* project */
+  .work {
+    padding: 0;
+  }
+  .work .desc .btns .btn {
+    padding: 1rem 1rem;
+  }
+
+  /* contact */
+  .contact .container {
+    background-image: url('../assets/img/contact1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 350px;
+  }
+  .contact .content .image-box {
+    display: none;
+  }
+  .contact .content form {
+    width: 100%;
+  }
+  .button-area button {
+    box-shadow: none;
+  }
+  .footer .credit {
+    font-size: 1.2rem;
+  }
+}

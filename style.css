@@ -54,8 +54,11 @@ header .logo {
   transition: all 0.18s ease-in;
 }
 
-header .logo:hover {
-  color: var(--primary-color);
+#menu {
+  display: none;
+}
+.nav-mob {
+  display: block;
 }
 
 .navbar ul {
@@ -83,7 +86,12 @@ header .navbar ul li a:hover {
   padding: 0.5rem 0;
 }
 
+/* Hero section styles end */
 .hero-section {
+  background-image: url(./assets/img/software-developer-6521720_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 2rem;
   min-height: 100vh;
   display: flex;
@@ -94,7 +102,7 @@ header .navbar ul li a:hover {
 
 .text-content h2 {
   font-size: 3rem;
-  color: #383838;
+  color: #ededed;
 }
 
 .text-content h2 span {
@@ -108,13 +116,13 @@ header .navbar ul li a:hover {
 .text-content p {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #383838;
+  color: #ededed;
   margin-bottom: 30px;
 }
 
 .text-content #about-btn {
   background-color: #058dfc;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
   padding: 10px 20px;
@@ -133,13 +141,13 @@ header .navbar ul li a:hover {
 }
 
 .social-icons li i {
-  background-color: #383838;
+  background-color: #fc8d05b0;
   padding: 15px;
   color: white;
   border-radius: 50%;
   font-size: 20px;
   margin-top: 4rem;
-  transition: all 0.15s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .social-icons li i:hover {
@@ -150,8 +158,10 @@ header .navbar ul li a:hover {
   border-radius: 50%;
 }
 
-/*  about sections styles starts */
 
+
+
+/*  about sections styles starts */
 .about-section {
   min-height: 90vh;
   width: 80vw;
@@ -177,6 +187,7 @@ header .navbar ul li a:hover {
 
 .about-section h2 {
   font-size: 2rem;
+  color: #383838;
 }
 .about-section h2 span {
   color: #383838;
@@ -193,6 +204,7 @@ header .navbar ul li a:hover {
 .about-section .container .text-content p {
   font-size: 1.1rem;
   font-weight: 500;
+  color: #383838;
 }
 /* about sectiion styles end */
 
