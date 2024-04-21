@@ -87,9 +87,24 @@ fetchData("projects").then(data => {
 });
 
 
+// add hamburger menu
+let hamburger = document.querySelector("#menu-bar");
+let crossbar = document.querySelector("#cross-bar")
+let showNavbar = document.querySelector("#mob-nav");
+hamburger.addEventListener("click", () => {
+    showNavbar.style.display = "block";
+});
+crossbar.addEventListener("click", () => {
+    showNavbar.style.display = "none";
+});
+
+
+
+
+
 // tilt function of a box if class name has tilt
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 15,
+    max:10,
 });
 
 // disable developer mode

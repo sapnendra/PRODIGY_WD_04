@@ -12,7 +12,10 @@
     display: none;
   }
 
-  #menu {
+  #menu-bar {
+    display: block;
+  }
+  .ham-navbar {
     display: block;
   }
 
@@ -40,11 +43,17 @@
   .social-icons li i {
     background-color: #fc8d05;
   }
+
+  /* about section */
   .about-section .container {
     padding: 0;
   }
   .about-section .container .image {
     display: none;
+  }
+
+  .about-section .text-content h2 {
+    font-size: 1.5rem;
   }
 
 

@@ -1,32 +1,18 @@
-@media (min-width: 381px) and (max-width: 890px) {
+@media (min-width: 891px) and (max-width: 1080px) {
     header {
       justify-content: space-between;
       padding: 10px 30px;
     }
   
-    .logo img {
-      height: 30px;
-    }
-  
-    .navbar {
-      display: none;
-    }
-  
     #menu {
       display: block;
     }
-  
-    .hero-section {
-      margin: 0;
-      min-height: 100vh;
-    }
     .hero-section .image {
-      display: none;
+      display: block;
     }
     .text-content {
-        min-width: 60%;
+        min-width: 42%;
     }
-  
     .text-content h2 {
       font-size: 1.5rem;
     }
@@ -35,6 +21,9 @@
     }
     .social-icons li i {
       background-color: #fc8d05;
+    }
+    .hero-section .image img {
+        height: 22rem;
     }
 
     /* about section */
@@ -52,7 +41,7 @@
   
     /*  skill section */
     .skills .container .row {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       flex-wrap: wrap;
       gap: 1.8rem;
     }
@@ -86,17 +75,7 @@
         min-height: 80vh;
     }
     .contact .container {
-      background-image: url('../assets/img/contact1.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 350px;
-    }
-    .contact .container {
         width: 80%;
-    }
-    .contact .content .image-box {
-      display: none;
     }
     .contact .content form {
       width: 100%;
