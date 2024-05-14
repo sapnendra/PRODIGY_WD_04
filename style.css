@@ -129,7 +129,7 @@ header .navbar ul li a:hover {
   padding: 0.5rem 0;
 }
 
-/* Hero section styles end */
+/* Hero section styles start */
 .hero-section {
   background-image: url(./assets/img/software-developer-6521720_1920.jpg);
   background-position: center;
@@ -140,6 +140,7 @@ header .navbar ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 9rem;
 }
 
 .text-content h2 {

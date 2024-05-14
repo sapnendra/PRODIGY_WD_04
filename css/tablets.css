@@ -11,8 +11,7 @@
     .navbar {
       display: none;
     }
-  
-    #menu {
+    #menu-bar {
       display: block;
     }
   
@@ -24,7 +23,7 @@
       display: none;
     }
     .text-content {
-        min-width: 60%;
+      min-width: 60%;
     }
   
     .text-content h2 {
